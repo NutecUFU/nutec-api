@@ -154,4 +154,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 FORCE_SCRIPT_NAME='/api'
-STATIC_URL = '/static/'
+#STATIC_URL = '/static/'
+ADMIN_MEDIA_PREFIX = '%s/static/admin/' % FORCE_SCRIPT_NAME
+STATIC_URL = '%s/static/' % FORCE_SCRIPT_NAME
