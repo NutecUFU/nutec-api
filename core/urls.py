@@ -23,7 +23,7 @@ router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('api/admin/', admin.site.urls),
     path('api/v1/', include(router.urls)),
     path('api/v1/auth', obtain_jwt_token),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
