@@ -159,5 +159,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 FORCE_SCRIPT_NAME='/api'
 #STATIC_URL = '/static/'
-ADMIN_MEDIA_PREFIX = '%s/static/admin/' % FORCE_SCRIPT_NAME
-STATIC_URL = '%s/static/' % FORCE_SCRIPT_NAME
+ADMIN_MEDIA_PREFIX = 'http://nutecrexlab1.ufu.br/%s/static/admin/' % FORCE_SCRIPT_NAME
+STATIC_URL = 'http://nutecrexlab1.ufu.br/%s/static/' % FORCE_SCRIPT_NAME
