@@ -90,10 +90,10 @@ WSGI_APPLICATION = 'core.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': os.environ.get('DB_NAME', 'nutec-dev'),
-        'USER': os.environ.get('DB_USER', 'postgres'),
-        'PASSWORD': os.environ.get('DB_PASS', '12345678'),
-        'HOST': os.environ.get('DB_HOST', 'localhost'),
+        'NAME': os.environ.get('DB_NAME', 'nutec'),
+        'USER': os.environ.get('DB_USER', 'nutecadmin'),
+        'PASSWORD': os.environ.get('DB_PASS', 'nc@2018'),
+        'HOST': os.environ.get('DB_HOST', '10.1.112.28'),
         'PORT': os.environ.get('DB_PORT', '5432'),
     }
 }
