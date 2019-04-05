@@ -158,7 +158,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 USE_X_FORWARDED_HOST = True
-FORCE_SCRIPT_NAME=''
+FORCE_SCRIPT_NAME='/api'
 #STATIC_URL = '/static/'
-ADMIN_MEDIA_PREFIX = 'http://nutecrexlab1.ufu.br/%s/static/admin/' % FORCE_SCRIPT_NAME
-STATIC_URL = 'http://nutecrexlab1.ufu.br/%s/static/' % FORCE_SCRIPT_NAME
+STATIC_URL = FORCE_SCRIPT_NAME + "/static/"
+MEDIA_URL = FORCE_SCRIPT_NAME + "/media/"
+ADMIN_MEDIA_PREFIX = FORCE_SCRIPT_NAME + "/static/admin/"
