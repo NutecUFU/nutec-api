@@ -160,6 +160,7 @@ USE_TZ = True
 USE_X_FORWARDED_HOST = True
 FORCE_SCRIPT_NAME='/api'
 #STATIC_URL = '/static/'
+STATIC_ROOT = 'static/'
 STATIC_URL = '/static/'
 # MEDIA_URL = FORCE_SCRIPT_NAME + "/media/"
 # ADMIN_MEDIA_PREFIX = FORCE_SCRIPT_NAME + "/static/admin/"
