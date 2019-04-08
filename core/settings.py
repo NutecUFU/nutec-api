@@ -130,6 +130,10 @@ REST_AUTH_SERIALIZERS = {
     "USER_DETAILS_SERIALIZER": "users.serializers.UserSerializer",
 }
 
+JWT_AUTH = {
+    'JWT_AUTH_HEADER_PREFIX': 'Bearer'
+}
+
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 10,
