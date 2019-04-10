@@ -4,8 +4,8 @@ services:
   db:
     image: postgres:9.6
     environment:
-      - POSTGRES_USER:nutecadmin
-      - POSTGRES_PASSWORD:nc@2018
-      - POSTGRES_DB:nutec
+      - POSTGRES_USER=nutecadmin
+      - POSTGRES_PASSWORD=nc@2018
+      - POSTGRES_DB=nutec
     ports:
       - '5432:5432'
