@@ -6,6 +6,7 @@ COPY requirements.txt /api/
 RUN pip install --proxy=proxy.ufu.br:3128 -r requirements.txt
 COPY . /api/
 WORKDIR /api
+RUN rm -r static
 RUN python manage.py collectstatic
 RUN python manage.py migrate --noinput
 EXPOSE 8000
