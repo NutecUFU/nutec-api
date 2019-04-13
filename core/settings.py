@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'users',
-    'experiments'
+    'experiments',
+    'schedules'
 ]
 
 MIDDLEWARE = [

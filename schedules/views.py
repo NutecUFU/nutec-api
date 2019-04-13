@@ -1,3 +1,8 @@
-from django.shortcuts import render
+from rest_framework import generics, permissions
+from schedules.models import Schedule
+from schedules.serializers import ScheduleSerializer
 
-# Create your views here.
+
+class ScheduleList(generics.ListCreateAPIView):
+    queryset = Schedule.objects.all()
+    serializer_class = ScheduleSerializer
