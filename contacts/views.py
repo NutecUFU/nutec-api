@@ -4,7 +4,7 @@ from contacts.serializer import ContactSerializer
 
 
 class ContactList(generics.ListCreateAPIView):
-    queryset = Contact.objects.all()
+    queryset = Contact.objects.order_by('date')
     serializer_class = ContactSerializer
 
 

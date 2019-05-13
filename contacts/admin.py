@@ -4,4 +4,4 @@ from contacts.models import Contact
 
 @admin.register(Contact)
 class ContactAdmin(admin.ModelAdmin):
-    list_display = ('name', 'email', 'message',)
+    list_display = ('name', 'email', 'message', 'date')

@@ -6,3 +6,4 @@ class Contact(models.Model):
     name = models.CharField(max_length=255)
     email = models.EmailField(_('email address'))
     message = models.TextField()
+    date = models.DateTimeField()
