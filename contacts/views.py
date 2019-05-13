@@ -6,7 +6,6 @@ from contacts.serializer import ContactSerializer
 class ContactList(generics.ListCreateAPIView):
     queryset = Contact.objects.all()
     serializer_class = ContactSerializer
-    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
 
 
 class ContactDetail(generics.RetrieveUpdateDestroyAPIView):
