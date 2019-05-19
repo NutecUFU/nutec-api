@@ -6,7 +6,7 @@ from users.models import User
 class UserList(generics.ListCreateAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
-    permission_classes = (permissions.IsAuthenticated,)
+    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
 
 
 class UserDetail(generics.RetrieveUpdateDestroyAPIView):
