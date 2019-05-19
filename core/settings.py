@@ -165,10 +165,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 USE_X_FORWARDED_HOST = True
-FORCE_SCRIPT_NAME='/api'
-#STATIC_URL = '/static/'
+FORCE_SCRIPT_NAME = '/api'
+# STATIC_URL = '/static/'
 STATIC_ROOT = 'static/'
 STATIC_URL = '/static/'
-# MEDIA_URL = FORCE_SCRIPT_NAME + "/media/"
+MEDIA_URL = "/media/"
 # ADMIN_MEDIA_PREFIX = FORCE_SCRIPT_NAME + "/static/admin/"
 # STATIC_ROOT = os.path.join(BASE_DIR, "static/")

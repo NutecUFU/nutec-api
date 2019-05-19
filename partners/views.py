@@ -7,3 +7,9 @@ class PartnerList(generics.ListCreateAPIView):
     queryset = Partner.objects.all()
     serializer_class = PartnerSerializer
     permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
+
+
+class PartnerDetail(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Partner.objects.all()
+    serializer_class = PartnerSerializer
+    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
