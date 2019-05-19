@@ -169,6 +169,6 @@ FORCE_SCRIPT_NAME = '/api'
 # STATIC_URL = '/static/'
 STATIC_ROOT = 'static/'
 STATIC_URL = '/static/'
-MEDIA_URL = "/media/"
+MEDIA_URL = FORCE_SCRIPT_NAME + "/media/"
 # ADMIN_MEDIA_PREFIX = FORCE_SCRIPT_NAME + "/static/admin/"
 # STATIC_ROOT = os.path.join(BASE_DIR, "static/")
