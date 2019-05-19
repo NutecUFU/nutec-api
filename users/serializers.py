@@ -1,10 +1,12 @@
 from rest_framework import serializers
 from users.models import User, UserProfile
 
+
 class UserProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = UserProfile
-        fields = ('photo',)
+        fields = ('photo', 'lattes', 'linked')
+
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):
 
