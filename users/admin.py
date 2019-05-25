@@ -1,5 +1,4 @@
 from django.contrib import admin
-from django.contrib.auth import get_user_model
 from django.utils.translation import ugettext_lazy as _
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from users.models import User, UserProfile
@@ -8,6 +7,7 @@ from users.models import User, UserProfile
 class UserProfileInline(admin.StackedInline):
     model = UserProfile
     can_delete = False
+
 
 @admin.register(User)
 class UserAdmin(BaseUserAdmin):
