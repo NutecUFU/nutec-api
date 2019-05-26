@@ -22,6 +22,7 @@ urlpatterns = [
     path('v1/users/', include('users.urls')),
     path('v1/experiments/', include('experiments.urls')),
     path('v1/schedules/', include('schedules.urls')),
+    path('v1/contacts/', include('contacts.urls')),
     path('v1/partners/', include('partners.urls')),
     path('admin/', admin.site.urls),
     path('v1/auth', obtain_jwt_token),

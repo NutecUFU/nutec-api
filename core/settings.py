@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'users',
     'experiments',
     'schedules',
+    'contacts',
     'partners'
 ]
 
@@ -166,7 +167,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 USE_X_FORWARDED_HOST = True
 FORCE_SCRIPT_NAME='/api'
-#STATIC_URL = '/static/'
+# STATIC_URL = '/static/'
 STATIC_ROOT = 'static/'
 STATIC_URL = '/static/'
 # MEDIA_URL = FORCE_SCRIPT_NAME + "/media/"
