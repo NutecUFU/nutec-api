@@ -24,9 +24,9 @@ URL_FIELD_NAME = 'nutecrexlab1.ufu.br'
 SECRET_KEY = '89mox+ryq(w%&0pg5nl8q*00p!+h7&5tqg+)c$8rq(w0$pq)*2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['nutecrexlab1.ufu.br']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -98,7 +98,7 @@ DATABASES = {
         'NAME': os.environ.get('DB_NAME', 'nutec'),
         'USER': os.environ.get('DB_USER', 'nutecadmin'),
         'PASSWORD': os.environ.get('DB_PASS', 'nc@2018'),
-        'HOST': os.environ.get('DB_HOST', '10.1.112.28'),
+        'HOST': os.environ.get('DB_HOST', 'localhost'),
         'PORT': os.environ.get('DB_PORT', '5432'),
     }
 }
@@ -167,7 +167,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 USE_X_FORWARDED_HOST = True
-FORCE_SCRIPT_NAME='/api'
+# FORCE_SCRIPT_NAME='/api'
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
