@@ -24,9 +24,9 @@ URL_FIELD_NAME = 'nutecrexlab1.ufu.br'
 SECRET_KEY = '89mox+ryq(w%&0pg5nl8q*00p!+h7&5tqg+)c$8rq(w0$pq)*2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['nutecrexlab1.ufu.br']
 
 
 # Application definition
