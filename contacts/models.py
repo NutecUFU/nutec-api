@@ -7,3 +7,6 @@ class Contact(models.Model):
     email = models.EmailField(_('email address'))
     message = models.TextField()
     date = models.DateTimeField()
+
+    class Meta:
+        ordering = ('date',)

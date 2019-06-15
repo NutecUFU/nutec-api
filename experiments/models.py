@@ -6,7 +6,7 @@ class Experiment(models.Model):
     description = models.TextField()
     domain = models.CharField(max_length=255)
     status = models.CharField(max_length=50)
-    photo = models.ImageField(upload_to='uploads', blank=True)
+    photo = models.ImageField(upload_to='uploads/exps', blank=True)
 
     class Meta:
         ordering = ('name',)

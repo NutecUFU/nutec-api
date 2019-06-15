@@ -17,11 +17,15 @@ class User(AbstractUser):
     REQUIRED_FIELDS = ['username', 'first_name', 'last_name']
 
     def __str__(self):
-        return "{}".format(self.email) 
+        return "{}".format(self.email)
+
+    class Meta:
+        ordering = ('username',)
 
 
 class UserProfile(models.Model):
     user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='profile')
     lattes = models.URLField(blank=True, null=True, max_length=255)
     linked = models.URLField(blank=True, null=True, max_length=255)
-    photo = models.ImageField(upload_to='uploads', default='http://nutec.ufu.br/assets/images/group/user.png')
+    photo = models.ImageField(upload_to='uploads/users', default='http://nutec.ufu.br/assets/images/group/user.png')
+

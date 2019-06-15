@@ -1,6 +1,7 @@
 from django.db import models
 from experiments.models import Experiment
 
+
 class Schedule(models.Model):
     name = models.CharField(max_length=255)
     email = models.EmailField()
