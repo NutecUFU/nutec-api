@@ -19,10 +19,6 @@ class User(AbstractUser):
     def __str__(self):
         return "{}".format(self.email)
 
-    def save(self, *args, **kwargs):
-        self.is_active = False
-        super().save(self, args, kwargs)
-
     class Meta:
         ordering = ('username',)
 
