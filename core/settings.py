@@ -136,7 +136,8 @@ REST_AUTH_SERIALIZERS = {
 }
 
 JWT_AUTH = {
-    'JWT_AUTH_HEADER_PREFIX': 'Bearer'
+    'JWT_AUTH_HEADER_PREFIX': 'Bearer',
+    'JWT_RESPONSE_PAYLOAD_HANDLER': 'core.utils.jwt_response_payload_handler'
 }
 
 REST_FRAMEWORK = {
