@@ -5,4 +5,4 @@ from experiments.models import Experiment
 class ExperimentSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Experiment
-        fields = ('name', 'description', 'domain', 'status', 'photo')
+        fields = ('id', 'name', 'description', 'domain', 'status', 'photo')
