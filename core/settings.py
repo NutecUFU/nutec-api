@@ -44,7 +44,9 @@ INSTALLED_APPS = [
     'experiments',
     'schedules',
     'contacts',
-    'partners'
+    'partners',
+    'materials.scripts',
+    'materials.curiosities'
 ]
 
 MIDDLEWARE = [

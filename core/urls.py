@@ -25,6 +25,7 @@ urlpatterns = [
     path('v1/schedules/', include('schedules.urls')),
     path('v1/contacts/', include('contacts.urls')),
     path('v1/partners/', include('partners.urls')),
+    path('v1/materials/', include('materials.urls')),
     path('admin/', admin.site.urls),
     path('v1/auth/', obtain_jwt_token),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
